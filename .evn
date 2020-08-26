@@ -1,0 +1,1 @@
+DATABASE_URI=postgresql://poadmin:poadmin@localhost:5432/mining
