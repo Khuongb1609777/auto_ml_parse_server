@@ -11,8 +11,9 @@ let PostgresStorageAdapter = require("parse-server/lib/Adapters/Storage/Postgres
   .PostgresStorageAdapter;
 let FSFilesAdapter = require("@parse/fs-files-adapter");
 
-var databaseUri = "postgres://admin:admin%40123@172.16.1.229:5432/mining";
-// var databaseUri = 'postgres://poadmin:poadmin@localhost:5432/mining';
+// var databaseUri = "postgres://admin:admin%40123@172.16.1.229:5432/mining";
+var databaseUri = 'postgres://poadmin:poadmin@localhost:5432/mining'
+
 
 if (!databaseUri) {
   console.log("DATABASE_URI not specified, falling back to localhost.");
