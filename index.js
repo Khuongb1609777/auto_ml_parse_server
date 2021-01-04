@@ -20,7 +20,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  // databaseURI: databaseUri || "postgres://admin:admin%40123@172.16.1.229:5432/mining",
+  // databaseURI: databaseUri || "postgres://admin:admin%40123@172.16.1.229:5432/mining2",
   databaseAdapter: new PostgresStorageAdapter({
     uri: databaseUri,
   }),
@@ -91,3 +91,4 @@ httpServer.listen(port, function () {
 
 // This will enable the Live Query real-time server
 ParseServer.createLiveQueryServer(httpServer);
+
